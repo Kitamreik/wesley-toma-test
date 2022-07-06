@@ -11,6 +11,25 @@ hamburgerIcon.addEventListener("click", () => {
     navUl.classList.toggle("open-sesame");
 });
 
+// slideshow
+// show slides based off the counter
+
+let slideCount = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  // init the index
+  let slides = document.getElementsByClassName("slide-img");
+  // DOM manipulation to target the images
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideCount++;
+  if (slideCount > slides.length) {slideCount = 1}
+  slides[slideCount-1].style.display = "block";  
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
 
 
 // loading bar functionality
