@@ -46,7 +46,38 @@ body {
     --brink-pink: #FF4D80;
     --light-gray: #DAD2D8;
     --carnelian: #A8201A;
+}
 
+/* Colors for the Page */
+.rich-black {
+    background-color: var(--rich-black);
+}
+.black-chocolate {
+    background-color: var(--black-chocolate);
+}
+.black {
+    background-color: var(--black);
+}
+.red-orange {
+    background-color: var(--red-orange);
+}
+.sandy-brown {
+    background-color: var(--sandy-brown);
+}
+.white {
+    background-color: var(--white);
+}
+.pale-pink {
+    background-color: var(--pale-pink);
+}
+.brink-pink {
+    background-color: var(--brink-pink);
+}
+.light-gray {
+    background-color: var(--light-gray);
+}
+.carnelian {
+    background-color: var(--carnelian);
 }
 
 .top-bar {
@@ -59,20 +90,39 @@ body {
     height: 43px;
     font-size: 12px;
     line-height: 1;
-    color: var(--);
+    /* background-color: var(--black);
+    color: var(--white); */
 }
 
+/* for top-bar */
+.white-text {
+    color: var(--white);
+}
+
+/* for icon styling */
+.sandy-icon {
+    color:  var(--sandy-brown);
+}
+
+.red-orange-icon {
+    color: var(--red-orange);
+}
+
+/* renders weird
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    /* above: 100 px, keep the 4th auto, last 2 50px */
-    /* gap: */
-    background-color: var(--);
-    padding: 10px;
-}
+
+    grid-template-columns: 100px auto 50px 50px; 
+    above: 100 px, keep the 4th auto, last 2 50px 
+    gap: 20px; 
+    color: var(--); 
+    padding: 10px; } */
+
 
 .grid-item {
-    border: 1px solid;
+    gap: 20px;
+    border: 1px;
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -81,6 +131,19 @@ body {
 img {
     width: 100px;
     /* height: 300px; */
+}
+
+/* much better for logo */
+.logo{
+    width: 200px;
+    height: 75px;
+}
+
+/* too small outside of nav, responsive inside */
+.photo-image-logo {
+    width: 35%;
+    padding: 0%;
+    height: 60%;
 }
 
 .photo-image {
@@ -115,23 +178,32 @@ footer {
     padding: 0.2%;
 }
 
+.link-styling-top a:link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* black links for body*/
 .link-styling a:link {
-    color: var(--);
+    color: var(--rich-black);
     text-decoration: none;
 }
 
+/* orange */
 .link-styling a:visited {
-    color: var(--);
+    color: var(--sandy-brown);
     text-decoration: none;
 }
 
+/* orange */
 .link-styling a:hover {
-    color: var(--);
+    color: var(--red-orange);
     font-weight: bold;
 }
 
+/* orange */
 .link-styling a:active {
-    color: var(--);
+    color: var(--red-orange);
     background-color: var(--);
     font-weight: bold;
 } 
@@ -235,6 +307,10 @@ footer {
     font-size: 1.3rem;
 }
 
+.tiny-expansion {
+    font-size: 0.75rem;
+}
+
 
 /* Font Awesome */
 fa-brands {
@@ -247,10 +323,6 @@ fa-brands {
     height: 20%;
 }
 
-/* Colors for the Page */
-.color {
-    background-color: var(--);
-}
 
 /* Hamburger JS outside media query - works */
 header {
