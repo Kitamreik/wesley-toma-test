@@ -1,15 +1,3 @@
-/* Coolors
-black - #020122
-red orange - #FF521B
-sandy brown - #FC9E4F
-white - #FFFFFF
-pale pink - #FAD4D8
-brink pink - #FF4D80
-light gray - #DAD2D8
-carnelian - #A8201A
-
-*/
-
 /* General --> then media query */
  /* the LAST thing is enforced --> cascading */
 /* General/For Everything */
@@ -26,6 +14,11 @@ carnelian - #A8201A
 
 */
 
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: auto smooth;
+}
 
 body {
     width: 100%;
@@ -35,14 +28,55 @@ body {
     font-size: 1.4rem;
     height: auto;
     /* background-color: var(-- , --); */
-    /* font-family: ;  */
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 300;
 }
 
-/* :root {
+:root {
+    /* Accessibility Coloring */
+    --rich-black: #0D1B2A;
+    --black-chocolate: #1F1300;
 
-} */
+    /* Coolors */
+    --black: #020122;
+    --red-orange: #FF521B;
+    --sandy-brown: #FC9E4F;
+    --white: #FFFFFF;
+    --pale-pink: #FAD4D8;
+    --brink-pink: #FF4D80;
+    --light-gray: #DAD2D8;
+    --carnelian: #A8201A;
 
+}
 
+.top-bar {
+    display: flex;
+    /* display: grid; */
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    height: 43px;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* above: 100 px, keep the 4th auto, last 2 50px */
+    /* gap: */
+    background-color: var(--);
+    padding: 10px;
+}
+
+.grid-item {
+    border: 1px solid;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
 
 img {
     width: 100px;
@@ -63,6 +97,10 @@ header {
     /* font-family: ; */
 }
 
+.line {
+    border-bottom: solid 5px var(--rich-black);
+}
+
 footer {
     background-color: var(--);
     width: auto;
@@ -78,35 +116,35 @@ footer {
 }
 
 .link-styling a:link {
-    color: var(--rich-black);
+    color: var(--);
     text-decoration: none;
 }
 
 .link-styling a:visited {
-    color: var(--rich-black);
+    color: var(--);
     text-decoration: none;
 }
 
 .link-styling a:hover {
-    color: var(--blue-munsell);
+    color: var(--);
     font-weight: bold;
 }
 
 .link-styling a:active {
-    color: var(--cosmic-latte);
-    background-color: var(--hot-pink);
+    color: var(--);
+    background-color: var(--);
     font-weight: bold;
 } 
 
 /* Footer Links */
 .link-styling-footer a:hover {
-    color: var(--gold-crayola);
+    color: var(--);
     font-weight: bold;
 }
 
 .link-styling-footer a:active {
-    color: var(--cosmic-latte);
-    background-color: var(--hot-pink);
+    color: var(--);
+    background-color: var(--);
     font-weight: bold;
 } 
 
