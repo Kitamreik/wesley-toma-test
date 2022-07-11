@@ -38,7 +38,7 @@ body {
     --rich-black: #0D1B2A;
     --black-chocolate: #1F1300;
 
-    /* Coolors */
+    /* Coolors for Mockup */
     --black: #020122;
     --red-orange: #FF521B;
     --sandy-brown: #FC9E4F;
@@ -47,7 +47,24 @@ body {
     --brink-pink: #FF4D80;
     --light-gray: #DAD2D8;
     --carnelian: #A8201A;
+
+    /* second round of colors */
+    --orchid-crayola: #EF9CDA;
+    --dark-turquoise: #25CED1;
+    --celeste: #A9F8FB;
+    --uranian-blue: #B6DCFE;
+    --bright-lilac: #E2A0FF;
+    --pumpkin: #FA700C;
+    --medium-spring-green: #6BFFB8;
+    --mantis: #7DCE82;
+    --electric-indigo: #6610F2;
+    --spanish-carmine: #D11149;
+    --jonquil: #E6C229;
+
+
 }
+
+* {box-sizing:border-box}
 
 /* Colors for the Page */
 .rich-black {
@@ -101,6 +118,12 @@ body {
     top: 0; 
     width: 100%;
     /* padding-top: 20px; */
+}
+
+.bottom-row {
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* for top-bar */
@@ -200,8 +223,6 @@ header {
     height: 12px;
     width: 83%
 }
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow {
@@ -312,8 +333,10 @@ footer {
 }
 
 /* for the headers in the footer */
+
+/* current usage for the black top-bar */
 .mini-container {
-    margin: auto;
+    /* margin: auto; */
     /* padding: 10px; */
     text-align: center;
     border: solid 5px var(--red-orange);
@@ -327,7 +350,7 @@ footer {
 
 /* For the page outline */
 .content-container {
-    margin: 60px;
+    margin: 20px;
     padding: 10px;
     /* border-top: solid 5px var(--);
     border-right: solid 5px var(--);
