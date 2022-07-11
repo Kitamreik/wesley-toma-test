@@ -66,7 +66,13 @@ body {
 
 * {box-sizing:border-box}
 
-/* Colors for the Page */
+/* 2nd round of Colors */
+.bright-lilac {
+    background-color: var(--bright-lilac);
+}
+
+
+/* Colors for the Page - Mockup*/
 .rich-black {
     background-color: var(--rich-black);
 }
@@ -408,11 +414,12 @@ footer {
 .content-container-3 {
     margin: 30px;
     padding: 20px;
+    background-color: var(--bright-lilac);
     /* border-top: solid 5px var(--);
     border-right: solid 5px var(--);
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
-    background-color: var(--); */
+     */
 }
 
 /* Text Expansion */
