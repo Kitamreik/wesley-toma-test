@@ -70,13 +70,38 @@ body {
 .bright-lilac {
     background-color: var(--bright-lilac);
 }
-
 .orchid-crayola {
     background-color: var(--orchid-crayola);
 }
+.dark-turquoise {
+    background-color: var(--dark-turquoise);
+}
+.celeste {
+    background-color: var(--celeste);
+}
+.uranian-blue {
+    background-color: var(--uranian-blue);
+}
+.pumpkin {
+    background-color: var(--pumpkin);
+}
+.medium-spring-green {
+    background-color: var(--medium-spring-green);
+}
+.mantis {
+    background-color: var(--mantis);
+}
+.electric-indigo {
+    background-color: var(--electric-indigo);
+}
+.spanish-carmine {
+    background-color: var(--spanish-carmine);
+}
+.jonquil {
+    background-color: var(--jonquil);
+}
 
-
-/* Colors for the Page - Mockup*/
+/* Colors for the Page - Mockup */
 .rich-black {
     background-color: var(--rich-black);
 }
@@ -226,9 +251,6 @@ header {
     width: 83%
 }
 
-
-
-
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -259,7 +281,7 @@ footer {
     text-decoration: none;
 }
 
-/* black links for body*/
+/* black links for body */
 .link-styling a:link {
     color: var(--rich-black);
     text-decoration: none;
@@ -331,7 +353,7 @@ footer {
     /* margin: auto; */
     /* padding: 10px; */
     text-align: center;
-    border: solid 5px var(--red-orange);
+    /* border: solid 5px var(--red-orange); */
     /* background-color: var(--);
     color: var(--); */
 } 
