@@ -95,6 +95,14 @@ body {
     color: var(--white); */
 }
 
+/* to add the sticky element */
+.nav-bar {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    /* padding-top: 20px; */
+}
+
 /* for top-bar */
 .white-text {
     color: var(--white);
@@ -193,7 +201,7 @@ header {
     width: 83%
 }
 
-/* * {box-sizing:border-box} */
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow {
@@ -308,8 +316,8 @@ footer {
     margin: auto;
     padding: 10px;
     text-align: center;
-    /* border: solid 5px var(--);
-    background-color: var(--);
+    border: solid 5px var(--red-orange);
+    /* background-color: var(--);
     color: var(--); */
 } 
 
@@ -528,7 +536,7 @@ a.menu {
     display: flex;
     overflow-y: scroll;
     overflow-x: auto;
-    border: solid 5px var(--);
+    border: solid 5px var(--carnelian);
     }
 }
 
