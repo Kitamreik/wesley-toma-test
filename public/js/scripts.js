@@ -11,7 +11,9 @@ hamburgerIcon.addEventListener("click", () => {
     navUl.classList.toggle("open-sesame");
 });
 
-// slideshow
+// ----------------------------------
+
+// slideshow - under maintenance 
 // show slides based off the counter
 
 let slideCount = 0;
@@ -31,13 +33,12 @@ function showSlides() {
   setTimeout(showSlides, 6000); // Change image every 6 seconds
 }
 
-
+// ----------------------------------
 // loading bar functionality
 
 
-
-// back to top arrow button
-
+// ----------------------------------
+// back to top arrow button - operational
 //Get the button
 let scrollbutton = document.getElementById("scroll-button");
 

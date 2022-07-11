@@ -71,6 +71,10 @@ body {
     background-color: var(--bright-lilac);
 }
 
+.orchid-crayola {
+    background-color: var(--orchid-crayola);
+}
+
 
 /* Colors for the Page - Mockup*/
 .rich-black {
@@ -133,13 +137,6 @@ body {
     width: 100%;
 }
 
-/* .card-stick {
-    position: relative;
-    left: 0;
-    right: 0;
-    width: 100%;
-} */
-
 /* for top-bar */
 .white-text {
     color: var(--white);
@@ -158,17 +155,6 @@ body {
 .red-orange-icon {
     color: var(--red-orange);
 }
-
-/* renders weird
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-
-    grid-template-columns: 100px auto 50px 50px; 
-    above: 100 px, keep the 4th auto, last 2 50px 
-    gap: 20px; 
-    color: var(--); 
-    padding: 10px; } */
 
 
 .grid-item {
@@ -195,15 +181,17 @@ img {
     height: 100px;
 }
 
+/* for large image */
 .photo-image-slide {
-    width: 100%;
-    padding: 10%;
-    height: 80%;
+    width: 50%;
+    padding: 5%;
+    height: 20%;
 }
 
+/* for medium image */
 .photo-image {
-    width: 60%;
-    padding-left: 25%;
+    width: 40%;
+    /* padding-left: 25%; */
     height: 10%;
 }
 
@@ -238,20 +226,8 @@ header {
     width: 83%
 }
 
-/* Slideshow container */
-.slideshow {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  /* scroll-snap-type: x mandatory; */
-}
 
-/* Hide the images by default */
-.slide-img {
-  display: none;
-  width: 100%;
-  /* scroll-snap-align: start; */
-}
+
 
 /* Fading animation */
 .fade {
@@ -420,6 +396,78 @@ footer {
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
      */
+}
+
+/* accordion psuedocode */
+
+/* highlights the inner content and outline */
+.accord-outline-container {
+    border-radius: 2%;
+    overflow: hidden;
+    border: solid 5px var(--light-gray);
+    background-color: var(--white);
+    /* scroll-snap-type: x mandatory; */
+    /* width: 80%; */
+    /* adds a slight stagger effect if width set to 80% and takes away space */
+}
+
+/* to color the text within the container */
+.accord-text-container {
+    width: 100%;
+    color: var(--rich-black);
+    overflow: hidden;
+    /* scroll-snap-align: start; */
+}
+
+/* define the container */
+.accord-text-container:first-child {
+    border-bottom: 1px solid;
+}
+
+/* coloring for the button */
+.accordion {
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+    background-color: var(--orchid-crayola);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* when you hover over the button, it changes color */
+.active, .accordion:hover {
+    background-color: var(--electric-indigo);
+}
+
+.accordion::after {
+    /* content: ")";  */
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.accord-content {
+    max-height: 0;
+    /* padding: 0 18px;
+    display: none; */
+    /* color: var(--white); */
+    /* background-color: var(--electric-indigo);  */
+    /* transition: all 0.5s ease; */
+}
+
+/* spacing within the panel */
+.panel {
+    padding: 0 18px;
+    display: block;
+    background-color: var(--white);
+    overflow: hidden;
 }
 
 /* Text Expansion */
@@ -627,6 +675,7 @@ img:template {
     height: 10%;
     text-align: center;
     font-size: 1.45rem;
+    /* padding-left: 30%; */
     color: var(--rich-black);
     display: flex;
     flex-direction: row;
@@ -642,3 +691,65 @@ img:template {
         display: none; 
         }
     }
+
+/* Experimental code */
+/* targeting the checkbox */
+/*
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+*/
+/* when the input is checked and group the label to transform and rotate 90 deg after the check */
+/*
+input:checked + .accord-label::after {
+    transform: rotate(90deg);
+}
+*/
+/* when the input is checked, show the content with a max height of 100vh */
+/*
+input:checked ~ .accord-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+*/
+
+/* Slideshow container */
+/*
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  scroll-snap-type: x mandatory; 
+}
+*/
+
+
+/* Hide the images by default */
+/*
+.slide-img {
+  display: none;
+  width: 100%;
+  scroll-snap-align: start; 
+}
+*/
+
+/* .card-stick {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+} */
+
+
+/* renders weird
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+
+    grid-template-columns: 100px auto 50px 50px; 
+    above: 100 px, keep the 4th auto, last 2 50px 
+    gap: 20px; 
+    color: var(--); 
+    padding: 10px; } */
