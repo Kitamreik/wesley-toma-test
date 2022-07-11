@@ -314,7 +314,7 @@ footer {
 /* for the headers in the footer */
 .mini-container {
     margin: auto;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     border: solid 5px var(--red-orange);
     /* background-color: var(--);
@@ -333,8 +333,9 @@ footer {
     border-right: solid 5px var(--);
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
-    background-color: var(--);
-    color: var(--); */
+    */
+    background-color: var(--pale-pink);
+    color: var(--); 
 }
 
 /* for a section, title */
@@ -345,8 +346,9 @@ footer {
     border-right: solid 5px var(--);
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
-    background-color: var(--);
-    color: var(--); */
+    */
+    background-color: var(--sandy-brown);
+    /* color: var(--); */
 }
 
 /* for a section around the content itself */
