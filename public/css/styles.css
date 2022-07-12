@@ -151,8 +151,18 @@ body {
     color: var(--white); */
 }
 
+/* By default when we are first loading page, don't display menu */
+nav.navbar {
+	display: none;
+}
+
+/* When navbar has the class open, display the menu items */
+nav.navbar.open-sesame {
+	display: block;
+}
+
 /* to add the sticky element */
-.nav-bar {
+.sticky {
     position: fixed;
     top: 0; 
     width: 100%;
@@ -343,7 +353,13 @@ footer {
     font-weight: bold;
 }
 
+/* .link-styling-nav {
+    color: var(--rich-black);
+    text-decoration: none;
+} */
+
 /* black links for body */
+/* orange links atm */
 .link-styling a:link {
     color: var(--rich-black);
     text-decoration: none;
@@ -424,7 +440,7 @@ footer {
     font-weight: bold;
 }
 
-/* Note for when you return: add colors to the content containers and work out what you want space to look like on the page */
+/* Note for when you return: add borders to the content containers and work out what you want space to look like on the page */
 
 /* For the page outline */
 .content-container {
@@ -435,21 +451,21 @@ footer {
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
     */
-    background-color: var(--pale-pink);
-    color: var(--); 
+    /* background-color: var(--pale-pink); */
+    color: var(--rich-black); 
 }
 
 /* for a section, title */
 .content-container-section {
     margin: 60px;
     padding: 10px;
+    color: var(--rich-black); 
     /* border-top: solid 5px var(--);
     border-right: solid 5px var(--);
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
     */
-    background-color: var(--sandy-brown);
-    /* color: var(--); */
+    /* background-color: var(--sandy-brown); */
 }
 
 /* for a section around the content itself */
@@ -461,7 +477,7 @@ footer {
     border-bottom: solid 5px var(--);
     border-left: solid 5px var(--);
      */
-    background-color: var(--brink-pink);
+    /* background-color: var(--brink-pink); */
     color: var(--rich-black);
     list-style-type: none;
     text-align: center;
@@ -476,7 +492,7 @@ footer {
 .content-container-3 {
     margin: 30px;
     padding: 20px;
-    background-color: var(--bright-lilac);
+    /* background-color: var(--bright-lilac); */
     /* border-top: solid 5px var(--);
     border-right: solid 5px var(--);
     border-bottom: solid 5px var(--);

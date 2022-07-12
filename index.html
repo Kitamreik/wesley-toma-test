@@ -24,10 +24,11 @@
 </head>
 <body>
     <title>About Us-Everlead</title>
-    <!-- black nav-bar -->
-    <br>
-    <header class="header-wrapper nav-bar"> 
+    <header class="header-wrapper sticky"> 
+        <!-- nav-bar here shows both the top bar and the sticky nav -->
+        <!-- not here does fix the page formatting and spacing and let's the button scroll to the side, does disappear for desktop -->
         <div class="top-bar mini-container black">
+            <!-- navbar here hides the menu items of top bar, which isn't what we want -->
             <div class="white-text">
             <!-- the black top bar -->
             <span class="minute-expansion">
@@ -59,12 +60,9 @@
             </span>
             </div>
         </div>
-        <!-- the nav bar functionality does work here -->
-        <!-- link styling -->
-        <nav class="grid-item minor-expansion link-styling">
+        <nav class="grid-item minor-expansion link-styling light-gray">
+             <!-- nav-bar here shows both the top bar and the sticky nav -->
             <!-- drop down menu functionality -->
-            <!-- <a href="#"><img src="public/img/wes-logo-2.png" alt="The Logo of Wesley Toma" class="logo"></a> -->
-            <!-- removed styling -->
             <a href="#"><img src="public/img/wes-logo-2.png" alt="The Logo of Wesley Toma"></a>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
@@ -90,59 +88,60 @@
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
                 <a href="#">Reference</a>
             </span>
-            <!-- <a href="#" >Homes</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog</a>
-            <a href="#">Shop</a>
-            <a href="#">Events</a>
-            <a href="#">Elements</a> -->
             <span>
                 <!-- search functionality -->
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <!-- hamburger menu -->
-                <i class="fa-solid fa-bars"></i>
             </span>
+            <!-- when you click on the menu, the navbar disappears, does fix the page formatting and spacing -->
+            <div>
+                <a href="javascript:void(0);" class="menu">
+                    <button>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </a>
+            </div>
         </nav>
     </header>
-    <div class="content-container link-styling">
-        <div class="content-container-2">
+    <div class="content-container pale-pink link-styling">
+        <div class="content-container-2 brink-pink">
             <!-- about us over stock photo -->
             <img src="public/img/about-stock.jpg" alt="a person working on their laptop, in a cafe looking at the screen" class="photo-image">
-            <span class="content-container-3 title-tinker expansion">
+            <span class="content-container-3 title-tinker expansion bright-lilac">
                 INDEX PAGE
             </span>
         </div>
-        <section class="grid-item minor-expansion content-container-section "> <!-- link styling -->
+        <section class="grid-item minor-expansion content-container-section sandy-brown"> <!-- link styling -->
             <!-- specialties --> 
             <h2 class="title-tinker">Our Specialties</h2>
             <!-- link to the following pages -->
             <!-- knowing -->
-            <div class="content-container-2 side-scroll-mobile">
+            <div class="content-container-2 side-scroll-mobile brink-pink">
                 <a href="#"><img src="public/img/knowing.png" alt="a logo for knowledge"><h3 class="title-tinker">Knowing</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <!-- selling -->
-            <div class="content-container-2 side-scroll-mobile">
+            <div class="content-container-2 side-scroll-mobile brink-pink">
                 <a href="#"><img src="public/img/selling.png" alt="a logo for selling"><h3 class="title-tinker">Selling</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <!-- learning -->
-            <div class="content-container-2 side-scroll-mobile">
+            <div class="content-container-2 side-scroll-mobile brink-pink">
                 <a href="#"><img src="public/img/learning.png" alt="a logo for learning"><h3 class="title-tinker">Learning</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <!-- contact -->
-            <div class="content-container-2 side-scroll-mobile">
+            <div class="content-container-2 side-scroll-mobile brink-pink">
                 <a href="#"><img src="public/img/contact.png" alt="a logo for contact"><h3 class="title-tinker">Contact</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
         <!-- Image descriptions needed in this section -->
         <!-- is legend needed here -->
-        <section class="content-container-section">
+        <section class="content-container-section sandy-brown">
             <!-- text -->
             <legend>
-                <div class="content-container-2 side-scroll-mobile">
+                <div class="content-container-2 side-scroll-mobile brink-pink">
                     <div class="accord-outline-container">
                         <div class="accord-text-container">
                             <button class="accordion title-tinker">
@@ -169,7 +168,7 @@
 
             <!-- Image Section -->
             <legend>
-                <div class="content-container-2 side-scroll-mobile">
+                <div class="content-container-2 side-scroll-mobile brink-pink">
                     <div class="accord-outline-container">
                         <div class="accord-text-container">
                             <button class="accordion title-tinker">
@@ -195,7 +194,7 @@
             </legend>
 
             <!-- Staff Role CARDS -->
-            <div class="content-container-2 side-scroll-mobile">
+            <div class="content-container-2 side-scroll-mobile brink-pink">
                 <div class="accord-outline-container">
                     <div class="accord-text-container">
                         <button class="accordion title-tinker">
@@ -235,7 +234,7 @@
         <section>
             <h2 class="title-tinker center-text expansion">Our Gatherings</h2>
             <p class="center-text minor-expansion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="content-container-2 photo-grid side-scroll-mobile">
+            <div class="content-container-2 photo-grid side-scroll-mobile brink-pink">
                 <img src="public/img/gathering A.jpg" alt="" class="photo-image">    
                 <img src="public/img/gathering B.jpg" alt="" class="photo-image">
                 <img src="public/img/gathering C.jpg" alt="" class="photo-image">
@@ -357,8 +356,8 @@
             </div>
         </div>
     </footer>
+    <!-- copyright -->
     <div class="sandy-brown center-text">
-        <!-- copyright -->
         Copyright &copy; Kit Fenrir Amreik, 2022. All rights reserved.
     </div>
 </body>

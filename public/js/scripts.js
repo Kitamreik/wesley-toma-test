@@ -1,15 +1,17 @@
 // DOM Event Steps:
 
 // 1. select hamburger icon --> event target
-const hamburgerIcon = document.querySelector("");
-const navUl = document.querySelector("");
+const hamburgerIcon = document.querySelector(".menu");
+const navLinks = document.querySelector(".nav-bar");
 
 // 2. event handler --> show/hide
+// Tip: use classList to help us toggle between show and hiding a class
+const toggleMenu = function() {
+  navLinks.classList.toggle("open-sesame");
+}
 
 // 3. bind with event listener --> attach hamburger icon to event listener, NOT Menu Items
-hamburgerIcon.addEventListener("click", () => {
-    navUl.classList.toggle("open-sesame");
-});
+hamburgerIcon.addEventListener("click", toggleMenu);
 
 // ----------------------------------
 
