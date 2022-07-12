@@ -151,16 +151,6 @@ body {
     color: var(--white); */
 }
 
-/* By default when we are first loading page, don't display menu */
-nav.navbar {
-	display: none;
-}
-
-/* When navbar has the class open, display the menu items */
-nav.navbar.open-sesame {
-	display: block;
-}
-
 /* to add the sticky element */
 .sticky {
     position: fixed;
@@ -179,6 +169,10 @@ nav.navbar.open-sesame {
 /* for top-bar */
 .white-text {
     color: var(--white);
+}
+
+.black-text {
+    color: var(--rich-black);
 }
 
 /* for the minor line breaks in content */
@@ -366,12 +360,13 @@ footer {
 }
 
 .link-styling a:visited {
-    color: var(--sandy-brown);
+    /* color: var(--sandy-brown); */
+    color: var(--rich-black);
     text-decoration: none;
 }
 
 .link-styling a:hover {
-    color: var(--red-orange);
+    color: var(--sandy-brown);
     font-weight: bold;
 }
 
@@ -601,33 +596,6 @@ fa-brands {
     height: 20%;
 }
 
-
-/* Hamburger JS outside media query - works */
-header {
-    display: flex;
-}
- 
- /* hides the menu when it's desktop */
-a.menu {
-    display: none;
-}
- 
- /* styling the hamburger menu */
-.hamburger {
-    overflow: visible;
-    position: relative;
-    padding: 14px;
-    display: flex;
-    /* display: none; */
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: transparent;
-    border: 0;
-    color: var(--);
-    font-size: 20px;
-}
-
 .center-button {
     display: flex; 
     flex-direction: row;
@@ -661,10 +629,71 @@ a.menu {
     padding: 30px 30px 100px;
 }
 
+/* By default when we are first loading page, don't display menu  - outside media query */
+nav.nav-bar {
+	display: none;
+}
+
+/* When navbar has the class open, display the menu items  - outside media query */
+nav.nav-bar.open-sesame {
+	display: block;
+}
+
+.nav-bar-list {
+    list-style: none;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+	display: block; /* default is inline element, display:block makes <a> to be width: 100% */
+}
+
+.nav-bar-list a:hover {
+    background-color: var(--light-gray);
+    color: var(--sandy-brown);
+}
+
+/* Hamburger JS outside media query - works */
+header {
+    display: flex;
+}
+ 
+ /* hides the menu when it's desktop - outside media query */
+a.menu {
+    display: none; 
+    /* default */
+
+    /* test */
+    /* display: block; */
+}
+ 
+ /* styling the hamburger menu */
+.hamburger {
+    overflow: visible;
+    /* default: above */
+    position: relative;
+    padding: 14px;
+    display: flex;
+    /* display: none; */
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: transparent;
+    border: 0;
+    /* color: var(--); */
+    font-size: 20px;
+}
+
+
+
 /* Media Query --> specific parameters for css code to operate in */
 /* Mobile Design [mobile container] */
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
+/* test */
+/* header {
+    display: flex;
+} */
+    
+/* OG code */
 header {
     display: block;
 }  
@@ -672,11 +701,21 @@ header .header-wrapper {
     display: flex;
     justify-content: space-between;
 }
-    
+
+/* Need to add line so that navbar displays again even if it doesn't have the open class */
+nav.navbar {
+    display: block;
+}
+
+nav.navbar {
+    flex: 2;
+}
+
 /* this is the link for the hamburger button */
 a.menu {
     display: block;
-    color: var(--);
+    /* default */
+    color: var(--pumpkin);
     position: fixed;
     right: 0;
     top: 0;
@@ -686,7 +725,7 @@ a.menu {
     max-width: 768px;
     margin: auto;
     height: 150px;
-    color:var(--cosmic-latte);
+    color:var(--spanish-carmine);
     border-radius: 10px;
     overflow: hidden;
     position: relative; 
@@ -746,12 +785,12 @@ a.menu {
 
 /* Tablet Design [hamburger] */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .hamburger {
-        overflow: hidden;
-        position: relative;
-        display: none; 
-        }
+.hamburger {
+    overflow: hidden;
+    position: relative;
+    display: none; 
     }
+}
 
 /* Experimental code */
 /* targeting the checkbox */
