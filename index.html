@@ -15,15 +15,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <!-- end -->
     <script src="https://kit.fontawesome.com/032df15d1f.js" crossorigin="anonymous"></script>
     <script defer src="public/js/scripts.js"></script>
-    
-    
 </head>
-<!-- bigger container to contain both the black bar and the nav within the header -->
 <body>
     <title>About Us-Everlead</title>
     <!-- black nav-bar -->
@@ -32,16 +30,16 @@
         <div class="top-bar mini-container black">
             <div class="white-text">
             <!-- the black top bar -->
-            <span>
+            <span class="minute-expansion">
                 <!-- icon -->
                 <i class="fa-solid fa-phone red-orange-icon"></i>
                 <span>Call +555-555-5555 now</span>
             </span>
-            <span>
+            <span class="minute-expansion">
                 <i class="fa-solid fa-envelope red-orange-icon"></i>
                 <span>Email us testkit@gmail.com</span>
             </span>
-            <span class= "grid-item tiny-expansion">
+            <span class= "grid-item minute-expansion">
                 <span class="link-styling-top"><a href="#">Follow Us
                 </a></span>
             </span>
@@ -51,13 +49,13 @@
                 <i class="fa-brands fa-facebook-square"></i>
                 <i class="fa-brands fa-twitter"></i>
             </span>
-            <span class="grid-item minor-expansion">
+            <span class="grid-item minor-expansion link-styling-top">
                 <i class="fa-solid fa-user sandy-icon"></i>
-                <button>Login</button>
-            </span>
-            <span class="grid-item minor-expansion">
+                <a href="#">Login</a>
+                <!-- <button>Login</button> -->
                 <i class="fa-solid fa-pencil red-orange-icon"></i>
-                <button>Register</button>
+                <a href="#">Register</a>
+                <!-- <button>Register</button> -->
             </span>
             </div>
         </div>
@@ -70,11 +68,11 @@
             <a href="#"><img src="public/img/wes-logo-2.png" alt="The Logo of Wesley Toma"></a>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                <a href="#">Homes</a>
+                <a href="#">Home</a>
             </span>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                <a href="#">Pages</a>
+                <a href="#">About Me</a>
             </span>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
@@ -82,15 +80,15 @@
             </span>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                <a href="#">Shop</a>
+                <a href="#">Schedule Me</a>
             </span>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                <a href="#">Events</a>
+                <a href="#">Testimonials</a>
             </span>
             <span class="grid-item minor-expansion">
                 <!-- <i class="fa-solid fa-arrow-right"></i> -->
-                <a href="#">Elements</a>
+                <a href="#">Reference</a>
             </span>
             <!-- <a href="#" >Homes</a>
             <a href="#">Pages</a>
@@ -106,37 +104,36 @@
             </span>
         </nav>
     </header>
-    
     <div class="content-container link-styling">
         <div class="content-container-2">
             <!-- about us over stock photo -->
             <img src="public/img/about-stock.jpg" alt="a person working on their laptop, in a cafe looking at the screen" class="photo-image">
-            <span class="content-container-3">
+            <span class="content-container-3 title-tinker expansion">
                 INDEX PAGE
             </span>
         </div>
-        <section class="grid-item minor-expansion content-container-section"> <!-- link styling -->
+        <section class="grid-item minor-expansion content-container-section "> <!-- link styling -->
             <!-- specialties --> 
-            <h2>Our Specialties</h2>
+            <h2 class="title-tinker">Our Specialties</h2>
             <!-- link to the following pages -->
             <!-- knowing -->
             <div class="content-container-2 side-scroll-mobile">
-                <a href="#"><img src="public/img/knowing.png" alt="a logo for knowledge"><h3>Knowing</h3></a>
+                <a href="#"><img src="public/img/knowing.png" alt="a logo for knowledge"><h3 class="title-tinker">Knowing</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <!-- selling -->
             <div class="content-container-2 side-scroll-mobile">
-                <a href="#"><img src="public/img/selling.png" alt="a logo for selling"><h3>Selling</h3></a>
+                <a href="#"><img src="public/img/selling.png" alt="a logo for selling"><h3 class="title-tinker">Selling</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <!-- learning -->
             <div class="content-container-2 side-scroll-mobile">
-                <a href="#"><img src="public/img/learning.png" alt="a logo for learning"><h3>Learning</h3></a>
+                <a href="#"><img src="public/img/learning.png" alt="a logo for learning"><h3 class="title-tinker">Learning</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <!-- contact -->
             <div class="content-container-2 side-scroll-mobile">
-                <a href="#"><img src="public/img/contact.png" alt="a logo for contact"><h3>Contact</h3></a>
+                <a href="#"><img src="public/img/contact.png" alt="a logo for contact"><h3 class="title-tinker">Contact</h3></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
@@ -148,7 +145,7 @@
                 <div class="content-container-2 side-scroll-mobile">
                     <div class="accord-outline-container">
                         <div class="accord-text-container">
-                            <button class="accordion">
+                            <button class="accordion title-tinker">
                                 Content A Header
                             </button>
                             <div class="accord- content panel">
@@ -160,7 +157,7 @@
                     <br>
                     <div class="accord-outline-container">  
                         <div class="accord-text-container">
-                            <button class="accordion">Section 3</button>
+                            <button class="accordion title-tinker">Content B Header</button>
                             <div class="panel">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
@@ -175,8 +172,8 @@
                 <div class="content-container-2 side-scroll-mobile">
                     <div class="accord-outline-container">
                         <div class="accord-text-container">
-                            <button class="accordion">
-                                Content A Header
+                            <button class="accordion title-tinker">
+                                Content C Header
                             </button>
                             <div class="accord- content panel">
                                 <img src="public/img/anna-shvets.jpg" alt="" class="photo-image">
@@ -187,7 +184,7 @@
                     <br>
                     <div class="accord-outline-container">  
                         <div class="accord-text-container">
-                            <button class="accordion">Section 3</button>
+                            <button class="accordion title-tinker">Content D Header</button>
                             <div class="panel">
                                 <img src="public/img/fauxels.jpg" alt="" class="photo-image-slide">
                             </div>
@@ -201,7 +198,7 @@
             <div class="content-container-2 side-scroll-mobile">
                 <div class="accord-outline-container">
                     <div class="accord-text-container">
-                        <button class="accordion">
+                        <button class="accordion title-tinker">
                             Your Name Here
                         </button>
                         <div class="panel card card-nudge content-container-3">
@@ -217,7 +214,7 @@
                 </div>
                 <div class="accord-outline-container">
                     <div class="accord-text-container">
-                        <button class="accordion">
+                        <button class="accordion title-tinker">
                             Your Name Here
                         </button>
                         <div class="panel card card-nudge content-container-3">
@@ -234,10 +231,10 @@
             </div>
         </section>
         <!-- find stock images for each section -->
+        <!-- our gatherings -->
         <section>
-            <!-- our gatherings -->
-            <h2>Our Gatherings</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="title-tinker center-text expansion">Our Gatherings</h2>
+            <p class="center-text minor-expansion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="content-container-2 photo-grid side-scroll-mobile">
                 <img src="public/img/gathering A.jpg" alt="" class="photo-image">    
                 <img src="public/img/gathering B.jpg" alt="" class="photo-image">
@@ -247,11 +244,9 @@
                 <img src="public/img/gathering F.jpg" alt="" class="photo-image">
             <!-- read more button -->
         </section>
-        <br>
-        <br>
         <section class="w3-container">
-            <h2>Creative Leader.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique veritatis asperiores beatae modi molestias doloremque repellat temporibus nihil. Ipsam rem accusantium eveniet totam suscipit, sunt autem error explicabo vitae!</p>
+            <h2 class="title-tinker center-text expansion">Creative Leader.</h2>
+            <p class="center-text minor-expansion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique veritatis asperiores beatae modi molestias doloremque repellat temporibus nihil. Ipsam rem accusantium eveniet totam suscipit, sunt autem error explicabo vitae!</p>
             <!-- Creative leader with the percentages -->
             <!-- read more button -->
             <!-- Progress bar -->
@@ -284,10 +279,10 @@
         </button>
     </div>
     <footer class = "footer bottom-row link-styling-footer">
-        <div class = "border"> 
+        <div class = "border side-scroll-mobile"> 
             <div class = "mini-container left-text">
                 <!-- about -->
-                <h2>About</h2>
+                <h2 class="title-tinker">About</h2>
                 <p class="red-orange-line">________</p>
                 <!-- <span>We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success.</span> -->
                 <p>We created Everlead to effectively become the stepping stone
@@ -302,7 +297,7 @@
             </div>
             <div class = "mini-container left-text">
                 <!-- Twitter feed -->
-                <h2>Twitter</h2>
+                <h2 class="title-tinker">Twitter</h2>
                 <p class="red-orange-line">________</p>
                 <span>
                     <i class="fa-brands fa-twitter"></i>
@@ -320,23 +315,23 @@
                 </span>
             </div>
             <div class = "mini-container left-text">
-                <h2>Important Links</h2>
+                <h2 class="title-tinker">Important Links</h2>
                 <p class="red-orange-line">________</p>
                 <span>
                     <a href="#">About Me</a>
                     <br>
-                    <a href="#">About Us</a>
+                    <a href="#">Schedule Me</a>
                     <br>
-                    <a href="#">Language Packs</a>
+                    <a href="#">Blog/Podcast Page</a>
                     <br>
-                    <a href="#">Become A Coach</a>
+                    <a href="#">Testimonials</a>
                     <br>
-                    <a href="#">Monthly Events</a>
+                    <a href="#">Reference</a>
                 </span>
                 <!-- important links -->
             </div>
             <div class = "mini-container left-text">
-                <h2>Contact Me</h2>
+                <h2 class="title-tinker">Contact Me</h2>
                 <p class="red-orange-line">________</p>
                 <!-- contact me -->
                 <span>

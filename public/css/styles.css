@@ -26,6 +26,11 @@ body {
     /* background-color: var(-- , --); */
     font-family: 'Montserrat', sans-serif;    
     font-weight: 300;
+    padding: 0;
+}
+
+.title-tinker {
+    font-family: 'Playfair Display SC', serif;
 }
 
 :root {
@@ -333,6 +338,11 @@ footer {
     text-decoration: none;
 }
 
+.link-styling-top a:hover {
+    color: var(--red-orange);
+    font-weight: bold;
+}
+
 /* black links for body */
 .link-styling a:link {
     color: var(--rich-black);
@@ -553,6 +563,10 @@ footer {
 
 .minor-expansion {
     font-size: 1.3rem;
+}
+
+.minute-expansion {
+    font-size: 1.1rem;
 }
 
 .tiny-expansion {
