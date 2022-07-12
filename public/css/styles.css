@@ -1,8 +1,6 @@
 /* General --> then media query */
  /* the LAST thing is enforced --> cascading */
 /* General/For Everything */
-
-
 .mobile-container > .nav-bar li {
     margin: auto;
     height: 70px;
@@ -11,9 +9,6 @@
     overflow: hidden;
     position: relative;
 }
-
-
-/* Note for when you return: add colors to the content containers and work out what you want space to look like on the page */
 
 html {
     overflow-x: hidden;
@@ -266,6 +261,59 @@ header {
     to {opacity: 1}
 }
 
+/* card formatting */
+.card {
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 60%;
+    max-width: 300px;
+    padding: 2.5%;
+    border-radius: 5px;
+    align-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: all 0.25s ease-in-out;
+  }
+.card-nudge {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0;
+}
+
+img:template {
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+/* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+
+.card-container {
+    padding: 5px 10px;
+    width: 60%;
+/* 25 - good for mobile, not desktop, maybe if more cards? */
+/* 57 - the size that works on both*/
+    height: 10%;
+    text-align: center;
+    font-size: 1.45rem;
+    /* padding-left: 30%; */
+    color: var(--rich-black);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 footer {
     background-color: var(--rich-black);
     width: auto;
@@ -365,6 +413,8 @@ footer {
 .bold {
     font-weight: bold;
 }
+
+/* Note for when you return: add colors to the content containers and work out what you want space to look like on the page */
 
 /* For the page outline */
 .content-container {
@@ -662,59 +712,7 @@ a.menu {
     border: solid 5px var(--carnelian);
     }
 }
-
-/* card for slideshow */
-.card {
-    box-shadow: 0 4px 8px 0;
-    transition: 0.3s;
-    width: 60%;
-    max-width: 300px;
-    padding: 2.5%;
-    border-radius: 5px;
-    align-content: center;
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    transition: all 0.25s ease-in-out;
-  }
-.card-nudge {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0;
-}
-
-img:template {
-    border-radius: 5px 5px 0 0;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-/* flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; */
-}
-
-.card-container {
-    padding: 5px 10px;
-    width: 60%;
-/* 25 - good for mobile, not desktop, maybe if more cards? */
-/* 57 - the size that works on both*/
-    height: 10%;
-    text-align: center;
-    font-size: 1.45rem;
-    /* padding-left: 30%; */
-    color: var(--rich-black);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+/* end media query */
 
 /* Tablet Design [hamburger] */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
