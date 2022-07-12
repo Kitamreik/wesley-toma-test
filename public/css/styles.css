@@ -646,6 +646,14 @@ nav.nav-bar.open-sesame {
 	display: block; /* default is inline element, display:block makes <a> to be width: 100% */
 }
 
+/* when the hamburger is clicked on desktop,  */
+.nav-bar-list {
+    display: inline-block;
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .nav-bar-list a:hover {
     background-color: var(--light-gray);
     color: var(--sandy-brown);
@@ -658,14 +666,25 @@ header {
  
  /* hides the menu when it's desktop - outside media query */
 a.menu {
-    display: none; 
-    /* default */
+    /* display: none;  */
+    /* default = none */
+
+    /* display: flex;  */
+    /* allows it to disappear when tablet, but not mobile/desktop */
+    
 
     /* test */
-    /* padding: 0; */
     /* display: block; */
+
+    /* BEST */
+    display: inline-block; 
+    /* makes it a column in mobile and added to the top-bar */
+
+    /* padding: 0; */
+    
 }
- 
+
+
  /* styling the hamburger menu */
 .hamburger {
     overflow: visible;
@@ -712,8 +731,10 @@ nav.navbar {
 
 /* this is the link for the hamburger button */
 a.menu {
-    display: block;
+    /* display: block; */
     /* default */
+    /* test */
+    display: inline-block;
     color: var(--pumpkin);
     position: fixed;
     right: 0;
@@ -744,9 +765,9 @@ a.menu {
 .nav-bar-list a {
     margin: 20px 10px;
 }
-.nav-bar-list a:hover {
+/* .nav-bar-list a:hover {
     color: var(--);
-}
+} */
 .mobile-container > .hamburger {
     overflow: visible;
     position: relative;
@@ -788,8 +809,15 @@ a.menu {
 .hamburger {
     overflow: hidden;
     position: relative;
-    display: none; 
-    }
+    display: block; 
+}
+
+.nav-bar-list {
+    display: inline-block;
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-start;
+}
 }
 
 /* Experimental code */
