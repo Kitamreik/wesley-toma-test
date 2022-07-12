@@ -676,7 +676,8 @@ a.menu {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-end;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: var(--pumpkin);
     border: 0;
     /* color: var(--); */
     font-size: 20px;
