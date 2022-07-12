@@ -752,6 +752,7 @@ a.menu {
     position: relative;
     padding: 14px;
     display: flex;
+    /* display: block; */
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: flex-end;
