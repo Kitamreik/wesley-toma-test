@@ -2,16 +2,16 @@
  /* the LAST thing is enforced --> cascading */
 /* General/For Everything */
 
-/* 
+
 .mobile-container > .nav-bar li {
     margin: auto;
     height: 70px;
-    color:var(--);
+    color:var(--rich-black);
     border-radius: 2px;
     overflow: hidden;
     position: relative;
 }
-*/
+
 
 /* Note for when you return: add colors to the content containers and work out what you want space to look like on the page */
 
@@ -29,7 +29,7 @@ body {
     font-size: 1.4rem;
     height: auto;
     /* background-color: var(-- , --); */
-    font-family: "Source Sans Pro",sans-serif;
+    font-family: 'Montserrat', sans-serif;    
     font-weight: 300;
 }
 
@@ -64,7 +64,11 @@ body {
 
 }
 
-* {box-sizing:border-box}
+* {
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
 
 /* 2nd round of Colors */
 .bright-lilac {
@@ -544,9 +548,16 @@ a.menu {
     font-size: 20px;
 }
 
+.center-button {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
 /* Scrolling */
 .scroll-button {
-    display: none;
+    display: block;
     position: fixed;
     bottom: 20px;
     left: 30px;
@@ -554,15 +565,15 @@ a.menu {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: var(--);
-    color: var(--);
+    background-color: var(--jonquil);
+    color: var(--rich-black);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
 }
   
 .scroll-button:hover {
-    color: var(--);
+    color: var(--pumpkin);
     font-weight: bold;
 }
 
