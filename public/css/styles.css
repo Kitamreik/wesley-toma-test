@@ -662,17 +662,17 @@ a.menu {
     /* default */
 
     /* test */
+    /* padding: 0; */
     /* display: block; */
 }
  
  /* styling the hamburger menu */
 .hamburger {
     overflow: visible;
-    /* default: above */
     position: relative;
-    padding: 14px;
+    /* default: above */
+    /* padding: 14px; */
     display: flex;
-    /* display: none; */
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-end;
@@ -681,8 +681,6 @@ a.menu {
     /* color: var(--); */
     font-size: 20px;
 }
-
-
 
 /* Media Query --> specific parameters for css code to operate in */
 /* Mobile Design [mobile container] */
