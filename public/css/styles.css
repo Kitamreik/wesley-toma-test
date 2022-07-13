@@ -228,6 +228,12 @@ img {
     height: 10%;
 }
 
+.photo-image-small {
+    width: 20%;
+    padding-left: 0%;
+    height: 5%;
+}
+
 header {
     background-color: var(--white);
     width: auto;
@@ -238,25 +244,6 @@ header {
 
 .line {
     border-top: solid 5px var(--rich-black);
-}
-
-/* the width denotes how much space to take up */
-.w3-progress-bar-mentor {
-    height: 12px;
-    width: 78%
-}
-
-.w3-progress-bar-education {
-    height: 12px;
-    width: 95%
-}
-.w3-progress-bar-learn {
-    height: 12px;
-    width: 65%
-}
-.w3-progress-bar-motivate {
-    height: 12px;
-    width: 83%
 }
 
 /* Fading animation */
@@ -416,7 +403,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-top: solid 5px var(--red-orange);
+    border-top: solid 5px var(--sandy-brown);
 }
 
 /* for the headers in the footer */
@@ -461,6 +448,20 @@ footer {
     border-left: solid 5px var(--);
     */
     /* background-color: var(--sandy-brown); */
+}
+
+.content-container-intro {
+    width: 70%;
+    margin: 15%;
+    height: fit-content;
+    color: var(--rich-black);
+    list-style-type: none;
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* for a section around the content itself */
@@ -745,7 +746,7 @@ a.menu {
     max-width: 768px;
     margin: auto;
     height: 150px;
-    color:var(--spanish-carmine);
+    color:var(--sandy-brown);
     border-radius: 10px;
     overflow: hidden;
     position: relative; 
