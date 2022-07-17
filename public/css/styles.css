@@ -425,7 +425,7 @@ footer {
 
 /* Note for when you return: add borders to the content containers and work out what you want space to look like on the page */
 
-/* For the page outline */
+/* For the page outline/background */
 .content-container {
     margin: 5px;
     /* padding: 10px; */
@@ -451,6 +451,7 @@ footer {
     /* background-color: var(--sandy-brown); */
 }
 
+ /* for the beginning sections of each page */
 .content-container-page-header {
     width: 50%;
     margin-left: 25%;
@@ -462,6 +463,7 @@ footer {
     align-items: center;
 }
 
+/* larger than page header */
 .content-container-intro {
     width: 70%;
     margin: 15%;
@@ -508,7 +510,16 @@ footer {
      */
 }
 
-/* accordion psuedocode */
+/* search container pseudocode */
+.search-bar {
+    float: right;
+}
+
+.calendly {
+    min-width:320px;height:630px;
+}
+
+/* accordion/ index card*/
 
 /* highlights the inner content and outline */
 .accord-outline-container {

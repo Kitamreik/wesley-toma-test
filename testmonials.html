@@ -5,8 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonial Archive</title>
+    <!-- external CSS -->
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+    <!-- w3 css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- begin Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <!-- end -->
+    <script src="https://kit.fontawesome.com/032df15d1f.js" crossorigin="anonymous"></script>
+    <script defer src="public/js/scripts.js"></script>
 </head>
 <body>
-    
+    <header class="header-wrapper sticky"> 
+        <div class="top-bar mini-container black">
+            <div class="white-text">
+            <!-- the black top bar -->
+            <span class="minute-expansion">
+                <!-- icon -->
+                <i class="fa-solid fa-phone red-orange-icon"></i>
+                <span>Call +555-555-5555 now</span>
+            </span>
+            <span class="minute-expansion">
+                <i class="fa-solid fa-envelope red-orange-icon"></i>
+                <span>Email us testkit@gmail.com</span>
+            </span>
+            <span class= "grid-item minute-expansion">
+                <span class="link-styling-top"><a href="#">Follow Us
+                </a></span>
+            </span>
+            <span class="grid-item minor-expansion">
+                <!-- Icons -->
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span class="grid-item minor-expansion link-styling-top">
+                <a href="javascript:void(0);" class="menu">
+                    <button class="hamburger">
+                        Menu
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </a>
+            </span>
+            </div>
+        </div>
+         <!-- nav-bar here shows both the top bar and the sticky nav -->
+        <nav class="grid-item minor-expansion light-gray link-styling nav-bar">
+            <!-- drop down menu functionality -->
+            <a href="#"><img src="public/img/wes-logo-2.png" alt="The Logo of Wesley Toma"></a>
+            <span class="grid-item minor-expansion nav-bar-list">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                <a href="/index.html">Home</a>
+            </span>
+            <span class="grid-item minor-expansion nav-bar-list">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                <a href="/about-me.html">About Me</a>
+            </span>
+            <span class="grid-item minor-expansion nav-bar-list">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                <a href="/blog.html">Blog</a>
+            </span>
+            <span class="grid-item minor-expansion nav-bar-list">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                <a href="/schedule.html">Schedule Me</a>
+            </span>
+            <span class="grid-item minor-expansion nav-bar-list">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                <a href="/testmonials.html">Testimonials</a>
+            </span>
+            <span class="grid-item minor-expansion nav-bar-list">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                <a href="/reference.html">Reference</a>
+            </span>
+        </nav>
+        <!-- search functionality -->
+        <!-- Post - method -->
+        <!-- <span class="grid-item minor-expansion nav-bar-list">
+            <div class="search-bar">
+                <form action="/">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </span> -->
+    </nav>
+    </header>
+
+    <!-- end of body content -->
+    <br>
+    <!-- button placement -->
+    <div>
+        <button onclick="topFunction()" id="scroll-button" class= "scroll-button">
+            Back to Top
+            <i class="fa-regular fa-circle-up"></i>
+        </button>
+    </div>
+    <footer class = "footer bottom-row link-styling-footer">
+        <div class = "border side-scroll-mobile"> 
+            <div class = "mini-container left-text">
+                <!-- about -->
+                <h2 class="title-tinker">About</h2>
+                <p class="red-orange-line">________</p>
+                <!-- <span>We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success.</span> -->
+                <p>We created Everlead to effectively become the stepping stone
+                    <br>
+                towards meeting all your goals & achieving business success.</p>
+                <!-- Icons -->
+                <i class="fa-brands fa-linkedin"></i>
+                <br>
+                <i class="fa-brands fa-facebook-square"></i>
+                <br>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class = "mini-container left-text">
+                <!-- Twitter feed -->
+                <h2 class="title-tinker">Twitter</h2>
+                <p class="red-orange-line">________</p>
+                <span>
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <br>
+                    <span>
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </span>
+                    <br>
+                    <span>
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </span>
+                </span>
+            </div>
+            <div class = "mini-container left-text">
+                <h2 class="title-tinker">Important Links</h2>
+                <p class="red-orange-line">________</p>
+                <span>
+                    <a href="/about-me.html">About Me</a>
+                    <br>
+                    <a href="/schedule.html">Schedule Me</a>
+                    <br>
+                    <a href="/blog.html">Blog/Podcast Page</a>
+                    <br>
+                    <a href="/testmonials.html">Testimonials</a>
+                    <br>
+                    <a href="/reference.html">Reference</a>
+                </span>
+                <!-- important links -->
+            </div>
+            <div class = "mini-container left-text">
+                <h2 class="title-tinker">Contact Me</h2>
+                <p class="red-orange-line">________</p>
+                <!-- contact me -->
+                <span>
+                    <!-- red-orange-icon -->
+                    <i class="fa-regular fa-address-card red-orange-icon"></i>
+                    <span>123 Coder Brain Lane</span>
+                </span>
+                <br>
+                <span>
+                    <!-- icon -->
+                    <i class="fa-solid fa-phone red-orange-icon"></i>
+                    <span>Call +555-555-5555 now</span>
+                </span>
+                <br>
+                <span>
+                    <i class="fa-solid fa-envelope red-orange-icon"></i>
+                    <span>Email us testkit@gmail.com</span>
+                </span>
+                <br>
+                <span> Your Name: </span>
+                <p>_________________  <button class="sub-button">Subscribe Today!</button></p>
+                <!-- your name - subscribe one-line form -->
+            </div>
+        </div>
+    </footer>
+    <!-- copyright -->
+    <div class="sandy-brown center-text">
+        Copyright &copy; Kit Fenrir Amreik, 2022. All rights reserved.
+    </div>
 </body>
 </html>
