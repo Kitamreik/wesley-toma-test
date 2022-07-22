@@ -516,7 +516,10 @@ footer {
 }
 
 .calendly {
-    min-width:320px;height:630px;
+    min-width: 640px;
+    /* org: 320 */
+    height: 315px;
+    /* org: 630 */
 }
 
 /* accordion/ index card*/
